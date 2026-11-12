@@ -1,16 +1,16 @@
 # Adult Site Blocker
 
 A Chrome extension that blocks adult websites from a list and also checks
-other pages for explicit content. When a site is blocked, it shows an
-animated pixel hand and a short message encouraging a pause.
+other pages for explicit content. When a site is blocked, it plays a
+muted video full screen with a "BLOCKED" label.
 
 ## Features
 
 - **Site list:** Blocks the domains listed in `rules.json` before they load.
 - **Content check:** `content.js` scans pages not on the list and blocks
   those with several explicit keywords.
-- **Blocked page:** `blocked.html` and `blocked.js` show an animated pixel
-  art message instead of the site.
+- **Blocked page:** `blocked.html` plays `video.mp4` full screen, muted,
+  on loop, with the controls hidden.
 
 ## Files
 
@@ -21,15 +21,17 @@ animated pixel hand and a short message encouraging a pause.
 | `content.js` | Keyword check on each page |
 | `background.js` | Required empty service worker |
 | `blocked.html` | Page shown when a site is blocked |
-| `blocked.js` | Animation for the blocked page |
+| `video.mp4` | Video played on the blocked page |
+| `screenshot.png` | Screenshot used in this README (optional) |
 
 ## Installing
 
 1. Download or clone this repository and keep the files in one folder.
-2. Open `chrome://extensions` in Chrome.
-3. Turn on **Developer mode** (top right).
-4. Click **Load unpacked** and select the folder.
-5. Make sure the extension is switched on.
+2. Add your own `video.mp4` to the folder. The repository does not include a video.
+3. Open `chrome://extensions` in Chrome.
+4. Turn on **Developer mode** (top right).
+5. Click **Load unpacked** and select the folder.
+6. Make sure the extension is switched on.
 
 ## Adding sites
 
