@@ -27,7 +27,7 @@ muted video full screen with a "BLOCKED" label.
 ## Installing
 
 1. Download or clone this repository and keep the files in one folder.
-2. Add your own `video.mp4` to the folder. The repository does not include a video.
+2. Add your own `video.mp4` to the folder. But I added a `video.mp4` for an example.
 3. Open `chrome://extensions` in Chrome.
 4. Turn on **Developer mode** (top right).
 5. Click **Load unpacked** and select the folder.
